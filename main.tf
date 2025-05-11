@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "devopsdev-rg" {
  name = "devopsdev-rg"
- location = "centralindia"
+ location = "east-us"
 }
 
 resource "azurerm_virtual_network" "devopsdev-vnet" {
