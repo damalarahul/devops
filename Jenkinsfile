@@ -1,3 +1,10 @@
+stage('Debug AZ Path') {
+    steps {
+        sh 'echo $PATH'
+        sh 'which az || echo "az not found"'
+        sh 'az version || echo "az CLI not working"'
+    }
+}
 pipeline {
     agent any
     
